@@ -1,0 +1,26 @@
+
+body{
+    background-image: url('https://i.stack.imgur.com/vhoa0.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(133, 205, 250, 0.4);
+    background-blend-mode: lighten;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.vid-container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+}
+
+@media(min-width:400px){
+    .vid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+iframe{
+    aspect-ratio: 16/9;
+}
